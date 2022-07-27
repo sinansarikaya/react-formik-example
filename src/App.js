@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import First from "./components/First";
 import Second from "./components/Second";
 import Useformik from "./components/Useformik";
-import Validation from "./components/Validation";
+import Validation from "./components/ValidationMain";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <li>
             <NavLink to="/useformik">UseFormik</NavLink>
           </li>
+
           <li>
             <NavLink to="/validation">Validation</NavLink>
           </li>
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<First />} />
           <Route path="/second" element={<Second />} />
           <Route path="/useformik" element={<Useformik />} />
+
           <Route path="/validation" element={<Validation />} />
         </Routes>
       </BrowserRouter>
